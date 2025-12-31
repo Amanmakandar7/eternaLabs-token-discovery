@@ -94,7 +94,7 @@ React Query fetches & syncs with Redux for UI rendering and real-time updates.
 
 
 
-![Home](D:\eternal-trading-table\public\screenshots\modal.png)
+![Home](public\screenshots\modal.png)
 ![Token Table](screenshots\token.png)
 ![Token Table](screenshots\token1.png)
 ![Token Modal](screenshots\modal.png)
