@@ -94,10 +94,10 @@ React Query fetches & syncs with Redux for UI rendering and real-time updates.
 
 
 
-![Home](screenshots/homepage.png)
-![Token Table](screenshots/token1.png)
-![Token Table](screenshots/token.png)
-![Token Modal](screenshots/modal.png)
+![Home](screenshots\home.png)
+![Token Table](screenshots\token.png)
+![Token Table](screenshots\token1.png)
+![Token Modal](screenshots\modal.png)
 
 
 ---
