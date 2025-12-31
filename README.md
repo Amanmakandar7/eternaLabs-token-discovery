@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧿 Token Discovery Dashboard — Real-Time Crypto Monitoring
 
-## Getting Started
+A pixel-perfect, high-performance token dashboard built with **Next.js 14, TypeScript, Redux Toolkit, React Query, Tailwind CSS, and shadcn-ui**.  
+It features real-time price updates, smooth UI interactions, multiple token categories, and production-grade architecture.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### 🟡 Token Columns
+- New Pairs
+- Final Stretch
+- Migrated
+
+### 🟡 Interactive UI
+- Sorting (Price / % Change / Volume)
+- Tooltips, Popovers, Modals
+- Hover & Click Interaction Patterns
+- Click-row → Open Token Details Modal
+- Three-dots menu with contextual actions
+
+### 🟡 Real-Time Updates
+- Mock WebSocket price feeds
+- Smooth color transitions
+- Direction-based price pulse effect
+
+### 🟡 Loading & Error Handling
+- Skeleton rows & shimmer loading state
+- Progressive loading
+- Custom Error Boundary
+
+### 🟡 Visual Quality
+- Pixel-perfect table (≤ 2px tolerance)
+- Consistent spacing & typography
+- Token icons with fallback avatar
+
+---
+
+## 🧩 Tech Stack
+
+- **Next.js 14 (App Router)**
+- **TypeScript (strict mode)**
+- **Redux Toolkit** — complex state
+- **React Query** — server state & caching
+- **Tailwind CSS**
+- **shadcn / Radix UI / Headless UI**
+- **Atomic & reusable component architecture**
+
+---
+
+## ⚡ Performance & Best Practices
+
+- Memoized components
+- No layout shifts
+- Interaction latency \< 100ms
+- Optimized animations & transitions
+- Lighthouse Score  
+  - **Desktop ≥ 90**
+  - **Mobile optimized & tuned**
+
+---
+
+## 🏗️ Project Architecture
+
+features/
+└─ tokens/
+├─ components/
+│ ├─ TokenTable.tsx
+│ └─ TokenRow.tsx
+├─ hooks/
+├─ states/
+│ ├─ tokenSlice.ts
+│ └─ ErrorBoundary.tsx
+└─ utils/
+app/
+├─ api/tokens/route.ts
+└─ pulse/page.tsx
+
+
+
+React Query fetches & syncs with Redux for UI rendering and real-time updates.
+
+---
+
+## 🖥️ Demo Screens
+
+- Token tables with tabs
+- Price animations
+- Popover actions menu
+- Token details modal
+- Skeleton loading states
+
+# screenshots
+
+### Token Details Modal
+![home](public/screenshots/homepage.png)
+![Token](public/screenshots/token.png)
+![Token](public/screenshots/token1.png)
+![Token modal](public/screenshots/modal.png)
+
+
+---
+
+## 🧪 How to Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
